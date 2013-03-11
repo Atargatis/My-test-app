@@ -1,0 +1,8 @@
+<tr>
+	<td><%= link_to user.username, user %></td>
+    <td>
+        <%= link_to 'Edit', edit_user_path(user), class: 'btn btn-mini btn-info' %>
+        <%= link_to "Delete", user, method: :delete,
+                                  data: { confirm: "You sure?" }, class: 'btn btn-mini btn-danger' %>
+    </td>
+</tr>

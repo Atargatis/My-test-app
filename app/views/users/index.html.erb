@@ -1,0 +1,18 @@
+<h2 class="span6">User index</h2>
+<table class="table span6">
+	<thead>
+		<tr>
+			<th>
+				<div id="paginator" class="span6">
+					<%= paginate @users, :remote => true %>
+				</div>
+			</th>
+			<th>
+				<%= link_to 'New User', new_user_path, class: 'btn' %>
+			</th>
+		</tr>
+	</thead>
+	<tbody id="users">
+<%= render @users %>
+    </tbody>
+</table>
